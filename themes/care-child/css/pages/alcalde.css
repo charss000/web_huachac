@@ -1,0 +1,82 @@
+.ContAlcalde > div > div {
+padding:10px;
+	display:flex;
+	justify-content:center !important;
+	flex-direction:column;
+	align-items:center;
+	text-align:center;
+}
+.ContAlcalde > div > div > .wpb_single_image > figure > div{
+text-align:center;
+}
+.ContAlcalde > div > div > .wpb_single_image > figure > div > img{
+width:70%;	
+}
+.Title-alcalde{
+}
+.SaludoAlcalde,.SaludoGerente{
+	width:100%;
+}
+.SaludoAlcalde > div,.SaludoGerente > div {
+	flex-direction:column;
+	width:100%;
+	display:flex;
+	align-items:center!important;
+	justify-content:center;
+	border-top:4px solid #078053;
+	
+	position:relative;
+}
+.SaludoAlcalde > div > h2,.SaludoGerente > div > h2{
+	background:#078053;
+	padding:4px 15px 10px 16px;
+	height:48px;
+	color:white;
+	position:absolute;
+	font-size:14px !important;
+	max-width:350px;
+	border-radius:10px;
+	text-transform:uppercase !important;
+	top:-35px;
+}
+.SaludoAlcalde > div > h2::after{
+  display:block;
+	font-size:11px;
+	width:100%;
+	content:'ALCALDE';
+margin-top:-5px;
+	top:-10px;
+		text-transform:uppercase;
+}
+.SaludoGerente > div > h2::after{
+  display:block;
+	font-size:11px;
+	width:100%;
+	content:'GERENTE MUNICIPAL';
+margin-top:-5px;
+	top:-10px;
+		text-transform:uppercase;
+}
+.SaludoAlcalde > div > .textwidget, .SaludoGerente > div > .textwidget{
+padding:30px ;
+	box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 8%) !important;
+	text-align:justify;
+	line-height:2ren;
+}
+.areas-descr > div > div > p{
+	display:none;
+}
+.areas-descr > div > div > ul{
+	color: #666;
+}
+.areas-descr > div > div > ul > li{
+	position:relative;
+	margin-left:45px;
+	text-transform:uppercase;
+}
+.areas-descr > div > div > ul > li::before{
+	position:absolute;
+	font-size:14px;
+  content: "-";
+	left:-20px;
+}

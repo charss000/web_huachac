@@ -1,0 +1,52 @@
+.cff-author{
+	display:none;
+}
+.cff-post-text{
+	padding:0px !important;
+text-align:justify !important;	
+	grid-area:nombre;
+}
+
+.cff-text{
+	text-align:center !important;
+}
+.cff-text > a{
+	display:none;
+}
+.cff-text > br{
+	display:none;
+}
+.cff-text > a:first-child{
+	display:block;
+	color:#fff;
+	text-align:center;
+}
+.cff-text-wrapper{
+	
+ position:absolute;
+	z-index:1;
+	background:rgba(7,128,83,.9);
+	height:100% !important;
+	
+}
+
+.cff-item{
+	border:3px #fff solid;
+	padding:0% !important;
+	box-shadow:var(--sombra);
+	position:relative;
+}
+.cff-item:hover > .cff-text-wrapper{
+	display:block !important;
+	color:#ffff !important;
+	padding:5px !important;
+}
+.cff-html5-video{
+	position:absolute;
+	z-index:1;
+}
+.cff-media-wrap{
+	position:relative;
+	z-index:1;
+}
+	

@@ -1,0 +1,128 @@
+/*Social Media Footer*/
+#menu-menu-footer{
+	display:flex !important;
+	align-items:center !important;
+	justify-content:space-between;
+	height:40px;
+}
+#menu-menu-footer > li{
+border:none !important;
+	height:100% !important;
+	padding:0% !important;
+	
+}
+#menu-menu-footer > li > a{
+height:100% !important;
+	display:flex !important;
+	align-items:center !important;
+	justify-content:space-between;
+	padding:10px;
+	color:#000 !important;
+}
+#menu-menu-footer > li > a > i{
+margin-left:10px;
+	color:#806703;
+	font-size:25px;
+}
+/*Fin de Social Media Footer*/
+/* Impunt Buscar footer*/
+.widget_search{
+	border:3px solid #078053;
+	border-radius:10px;
+	padding:5px;
+	margin:1px;
+	padding:5px;
+}
+.wp-block-search__input,.wp-block-search__button {
+  outline: none;
+  background-color: transparent !important;
+background: transparent !important;
+  border: 0 !important;
+	height:30px;
+	color:#078053;
+}
+.wp-block-search__input::placeholder {
+  color: #078053;
+  font-size: 14;
+}
+.wp-block-search__button > svg {
+	fill:#078053 !important;
+}
+/*Footer Social*/
+#footer-social > ul {
+
+	padding:10px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center !important;
+}
+#footer-social > ul > li:first-child {
+	padding-bottom:0px;
+}
+#footer-social > ul > li:last-child {
+	padding-top:0px;
+}
+#footer-social > ul > li {
+	height:40px;
+border-bottom:none !important;
+	display:flex !important;
+	align-items:center !important;
+}
+#footer-social > ul > li > a {
+	font-size:28px;
+	color:#078053 !important;
+}
+#footer-social > ul > li > a > i {
+	font-size:30px !important;
+	
+}
+.Footer-Right{
+
+	width:100% !important;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+}
+.Footer-Right > h4 {
+color:var(--primario);;
+	font-weight:600;
+}
+.Footer-Right > p {
+color:#000;
+opacity:0.8;
+}
+.Footer-Right > p > i {
+margin-right: 15px;
+    color: #806703;
+    font-size: 20px;
+}
+
+
+
+/* Copy right footer*/
+.site-info{
+	background:#806703;
+}
+.site-info > div{
+	display:flex;
+	justify-content:center;
+	color:#fff !important;
+}
+.site-info > div > aside {
+	display:flex;
+	justify-content:center;
+	color:#fff !important;
+	align-items:center !important;
+}
+.site-info > div > aside > div > div > div  {
+	display:flex;
+	justify-content:center;
+	color:#fff !important;
+	align-items:center !important;
+}
+.site-info > div > aside > div > div > div > i {
+	margin-right:10px;
+	font-size:30px;
+}
+/*fin de copy right footer*/

@@ -1,0 +1,79 @@
+/*Redes Sociales*/
+
+/*fin de redes sociales*/
+/*area servicio 2*/
+.Cont_social_Media{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:auto;
+	
+}
+.contIco{
+display:block;
+	width:100%;
+	
+	text-align:center;
+	
+}
+.widget_social{
+	
+	display:inline-block;
+	margin:4px 2px;
+}
+.widget_social > a > i{
+	font-size:22px !important;
+	width:30px;
+	height:30px;
+	background:transparent;
+	color:var(--primario);
+	display:flex;
+	justify-content:left;
+	align-items:left;
+	border-radius:50%;
+	transition:all 1s ease-in-out !important;
+	
+}
+
+.widget_social > a > .fa-facebook:hover{
+	
+	color:#3b5998;
+}
+.widget_social > a > .fa-youtube:hover{
+	
+	color:#c4302b;
+}
+.widget_social > a > .fa-whatsapp:hover{
+	
+	color:#25d366;
+}
+.widget_social > a > .fa-instagram:hover{
+	
+	color:#dd2a7b;
+}
+.widget_social > a > .fa-twitter:hover{
+	
+	color:#1dcaff;
+}
+.widget_social > a > .fa-telegram:hover{
+	
+	color:#0088cc;
+}
+.widget_social > a > .fa-pinterest-square:hover{
+	
+	color:#c8232c;
+}
+.widget_social > a > .fa-dribbble:hover{
+	
+	color:#ea4c89;
+}
+.widget_social > a > .fa-linkedin:hover{
+	
+	color:#0e76a8;
+}
+.widget_social > a > .fa-envelope:hover{
+	
+	color:#fce806;
+}
+ 

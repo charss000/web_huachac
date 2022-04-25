@@ -1,0 +1,103 @@
+.header-cultura > #header-wrapper  {
+	background:var(--secundario-dark) !important;
+	
+}
+.footer-sidebar-cultura{
+	padding:20px 0px 20px 0px;
+	
+}
+.footer-cultura{
+	display:flex !important;
+	background-size:cover !important;;
+background-repeat:no-repeat !important;;
+	justify-content:space-evenly !important;;
+	align-items:center !important;;
+	position:relative !important;;
+	width:99% !important;;
+	height:250px !important;;
+	padding:10px !important;;
+	 box-sizing: border-box !important;;
+	overflow:hidden !important;;
+	border-radius:8px !important;;
+	border:var(--primario) 2px solid !important;;
+	
+}
+.footer-cultura::before{
+	content:'';
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color:rgba(255,255,255,0.7)
+}
+.footer-cultura > .cont-img{
+	position:relative;
+}
+.footer-cultura > .cont-img > img{
+	width:180px;
+}
+.footer-cultura >.textwidget{
+	position:relative;
+}
+.footer-cultura >.textwidget > ul > li {
+	list-style:none;
+	line-height:40px;
+	display:flex;;
+	font-weight:800;
+	font-size:13px;
+	cursor:pointer;
+}
+.footer-cultura >.textwidget > ul > li > i {
+color:#fff;
+	margin-right:8px;
+	background:var(--primario);
+	width:30px;
+	height:30px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:50%;
+	
+}
+.footer-cultura >.textwidget > ul > li:hover > i {
+background:var(--primario-light)
+	
+}
+.footer-cultura >.textwidget > ul > li:hover  {
+font-weight:900 !important;
+	
+}
+.footer-cultura >.cont_img_footer{
+	position:relative;
+
+	right:-15%;
+	bottom:-5%;
+}
+.footer-cultura >.cont_img_footer > img{
+	position:relative;
+	width:120px;
+	bottom:-30px;
+	right:0 !important;
+}
+/*Menu informativo  superior */
+.menu-container-info > ul{
+	background:var(--secundario-dark)!important ;
+	
+	
+}
+.menu-container-info > ul::before {
+
+    border-right: 70px solid var(--secundario-dark)!important;
+   
+}
+.menu_convocatoria > a{
+	background: var(--secundario) !important  ;
+}
+.menu_convocatoria > a:hover{
+	color:var(--primario) !important;
+	background:var(--terciario)!important;
+}
+#menu-menu-principal > li:hover{
+	background:var(--secundario);
+}
+
+

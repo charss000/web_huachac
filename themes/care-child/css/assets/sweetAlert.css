@@ -1,0 +1,31 @@
+.contPopup{
+	display:none;
+}
+.iconoSweet{
+    background-color: black !important;
+    margin: 10px;
+    color: #fff;
+    width: 30px !important;
+    border-radius: 50% !important;
+    height: 30px !important;
+    padding: 0% !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px !important;
+    font-weight: 800;
+
+}
+
+.iconoSweet:hover{
+  
+    color: #fff!important;
+   
+
+}
+.swal2-modal{
+
+max-width:500px !important;
+}
+.contPopupImg{
+	width:100%;
+}
