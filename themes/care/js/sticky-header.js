@@ -17,7 +17,8 @@ jQuery(document).ready(function($) {
 			$('#site-logo').css({ 'margin-top' : logoNewMargin  + 'px' });
 			$('#site-logo img').css({ 'width' : 'auto' });
 			$('.header-search').css({ 'margin-top' : '25px' });
-
+			$('.fabs').css({ 'display' : 'block' });
+			
 			if(stickyHeight > 50) {
 				$('#site-header #header-container').css({ 'height' : stickyHeight  + 'px' });
 				$('#site-logo img').css({ 'max-height' : stickyHeight  + 'px' });
@@ -36,6 +37,7 @@ jQuery(document).ready(function($) {
 			$('#site-logo img').css({ 'width' : 'auto' });
 			$('#site-navigation .menu > li > a, #site-navigation .search_button, #site-navigation .header_cart_link, #site-logo .site-title').css({ 'line-height' : headerHeight + 'px' });
 			$('.header-search').css({ 'margin-top' : '40px' });
+			$('.fabs').css({ 'display' : 'none' });
 		}
 		
 	});

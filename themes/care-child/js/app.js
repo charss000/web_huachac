@@ -20,8 +20,8 @@ numImg.forEach(item => {
 jQuery(document).ready(function(){		
   MostrarCarrucel();
 //templateGestionRiesgos()
-
-templateVideoModal();
+templateComunicado()
+//templateVideoModal();
 	
 });	
 function templateVideoModal(){
@@ -40,8 +40,8 @@ function templateGestionRiesgos(){
 	CargarComunicadosInfo(title,template)
 }
 function templateComunicado(){
-		const template =`<h3>Primera entrega de bienes adjudicados y donados con fines de apoyo social a la Municipalidad Distrital de Huáchac por parte del MIMP</h3>
-<a href='https://munihuachac.gob.pe/wp-content/uploads/2022/03/SKMBT_36322032313280-rotado.pdf' target='blank' class="bnt-ventana" > Ver Lista</a> </br> <br>
+		const template =`<h3>Padron final de beneficiarios de donaciones de bienes Municipalidad Distrital de Huáchac </h3>
+<a href='https://munihuachac.gob.pe/wp-content/uploads/2022/05/SKMBT_36322051812030.pdf' target='blank' class="bnt-ventana" > Ver Lista</a> </br> <br>
 
 `
 	cargarventaInforme(template);

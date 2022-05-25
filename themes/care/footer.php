@@ -14,5 +14,7 @@
 		
 <?php echo ot_get_option('code_before_body'); ?>
 <?php wp_footer(); ?>
+
+      
 </body>
 </html>

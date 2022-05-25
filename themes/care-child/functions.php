@@ -291,7 +291,17 @@ return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'wp_trim_all_excerpt');
 //realizando un nuevo sidebarTransparecia
-
+//<--insercion de nuevos menus --->
+if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
+ 
+    function mytheme_register_nav_menu(){
+        register_nav_menus( array(
+			'secundario' => __( 'Main Navigation right', 'care' ),
+			
+        ) );
+    }
+    add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 );
+}
 
 
 

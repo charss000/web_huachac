@@ -114,3 +114,19 @@ width: 150px !important;
 #post-2484 > div.entry-content > section > div.table-responsive.w-100.d-block > table > thead {
     background-color: var(--primario);
 }
+.comunicadoPadron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 30px;
+    flex-direction: column;
+   
+  
+}
+.comunicadoPadron > div{
+width: 70%;
+padding: 20px !important;
+border: var(--primario) dashed 2px;
+text-align: center;
+text-transform: uppercase !important;
+}

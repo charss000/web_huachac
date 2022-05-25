@@ -68,7 +68,7 @@
 					
 					<nav id="site-navigation" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-container', 'fallback_cb' => 'mnky_no_menu') ); ?>
-						<?php wp_nav_menu( array( 'theme_location' => 'secundario', 'container_class' => 'menu-container-right', 'fallback_cb' => 'mnky_no_menu') ); ?>
+						
 						
 						<?php if( class_exists( 'WooCommerce' ) && ot_get_option('cart_button') != 'off' ) : ?>
 							<div class="header_cart_wrapper">

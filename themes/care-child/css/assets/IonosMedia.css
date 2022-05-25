@@ -76,4 +76,112 @@ display:block;
 	
 	color:#fce806;
 }
+/*Iconos float Media*/
+.fabs {
+	position: fixed;
+	right: 20px;
+	bottom: 80px;
+   display:none;
+   z-index: 999999999 !important;
+  }
+  
+  .action {
+	background: var(--primario);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	box-shadow: 0 5px 7px 0px gray;
+	transition: background-color 0.4s ease-in-out;
+  }
+  
+  .action i {
+	position: absolute;
+	color: white;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 25px;
+	cursor: pointer;
+  }
+  
+  .action:hover {
+	background-color: var(--primario-light);
+  }
+  
+  .btn-ico {
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+  }
+  
+  .btn-ico i {
+	position: absolute;
+	font-size: 18px;
+	color: white;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  .btns {
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: 5px;
+	height: 35px;
+	width: 35px;
+	transition: 0.3s ease-in-out;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+  }
+  .btns.open {
+	bottom: 50px;
+	
+  }
+  .open > a{
+	
+	  
+
+	border-radius: 50%;
+	
+	transition: background-color 0.4s ease-in-out;
+
+  }
+  .open > a > i{
+	color: rgb(255, 255, 255) !important;
+  }
+  
+  .btn-ico > .txtInfo{
+	 visibility: hidden;
+		 width: 0px;
+	 height: 0px;
+	 overflow: hidden;
+	 display: none;
+	 padding: 5px;
+	 min-width: 150px;
+	 color: #fff !important;
+	 text-align: center;
+	 transition: background .2s ease-in-out;
+	 border-radius: 2px;
+	 opacity: 0.8;
+  }
+  /*
+  .btn-ico > .txtInfo::after{
+	  content: '';
+	  width: 0; 
+     height: 0; 
+     border-left: 100px solid #f0ad4e;
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent; 
+  }*/
+  .btn-ico:hover > .txtInfo{
+	visibility: visible;
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	width: auto !important;
+	height: auto;
+	display: block;
+ }
  
