@@ -20,7 +20,7 @@ numImg.forEach(item => {
 jQuery(document).ready(function(){		
   MostrarCarrucel();
 //templateGestionRiesgos()
-templateComunicado()
+//templateComunicado()
 //templateVideoModal();
 	
 });	
