@@ -8,55 +8,25 @@ get_header( 'cultura' );
 ?>
 
 
-		<div id="container" class="row-inner">
-			<div id="content" class="float-right">
+<div id="container" class="no-sidebar">
+			<div id="content">
 
-				<?php the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-
-					<div class="entry-content">
+					<div class="entry-content clearfix">
 						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'care' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
-				</article><!-- #post-<?php the_ID(); ?> -->
+				</article>
 
 				<?php if (ot_get_option('page_comments') != 'off') {
-					comments_template( '', true );
+					echo '<div class="row-inner"><div class="vc_span12 wpb_column column_container">';
+						comments_template( '', true );
+					echo '</div></div>';
 				} ?>
-			
+				<?php endwhile; ?>
+
 			</div><!-- #content -->
-
-			<div id="sidebar" class="float-left">
-<div class="page-sidebar">
-			<div class="widget-area">
-				<?php if ( ! dynamic_sidebar( 'cultura-sidebar' ) ) : ?>
-
-					<aside id="archives" class="widget" role="complementary">
-						<h3 class="widget-title"><?php _e( 'Archives', 'care' ); ?></h3>
-						<ul>
-							<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-						</ul>
-					</aside>
-
-					<aside id="meta" class="widget" role="complementary">
-						<h3 class="widget-title"><?php _e( 'Meta', 'care' ); ?></h3>
-						<ul>
-							<?php wp_register(); ?>
-							<aside role="complementary"><?php wp_loginout(); ?>
-						
-							</aside>
-							<?php wp_meta(); ?>
-						</ul>
-					</aside>
-
-			<?php endif; ?>
-			</div>
-				
-	</div>
-			</div>
-		
-
-		</div><!-- #container -->
+		</div><!-- #conta
 		
 <?php get_footer('cultura'); ?>
