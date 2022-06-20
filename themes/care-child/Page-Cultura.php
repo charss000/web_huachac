@@ -5,11 +5,39 @@
 ?>
 <?php
 get_header( 'cultura' );
+$sliders = getSlider();
 ?>
 
-
+ 
 <div id="container" class="no-sidebar">
 			<div id="content">
+			<div class="slider_carrucel with-dots">
+
+<?php foreach ($sliders as $item) { ?>
+	<div id="slider-<?php echo $item['ID']; ?>"
+		 class="site-blocks-cover slider overlay overlay-2"
+		 style="background-image: url(<?php echo $item['image_full'][0] ?>);"
+		 data-aos="fade">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-12 mt-lg-5">
+				
+					<h1 class="slider-title text-shadow"><?php echo $item['slider_title']; ?></h1>
+					<div class="slider-description mb-5 text-shadow"><?php echo $item['slider_description']; ?></div>
+					<?php if ($item['slider_url']) : ?>
+						<p>
+							<a href="<?php echo $item['slider_url']; ?>" target="_blank" class="btn btn-primary px-5 py-3">
+								<?php echo $item['slider_btn']; ?>
+							</a>
+						</p>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+
+</div> 
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

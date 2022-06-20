@@ -302,6 +302,75 @@ if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
     }
     add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 );
 }
+/**
+ * Registers the slider post type.
+ */
+function cultura_slider_post_type() {
+    $labels = array(
+        'name'               => __( 'Portadas' ),
+        'singular_name'      => __( 'Portada' ),
+        'add_new'            => __( 'Agregar portada' ),
+        'add_new_item'       => __( 'Agregar portada' ),
+        'edit_item'          => __( 'Editar portada' ),
+        'new_item'           => __( 'Agregar portada' ),
+        'view_item'          => __( 'Visualizar portada' ),
+        'search_items'       => __( 'Buscar portada' ),
+        'not_found'          => __( 'No se encontro portada' ),
+        'not_found_in_trash' => __( 'No se encontro portada en la papelera' )
+    );
+    $supports = array(
+        'title',
+        'editor',
+        'thumbnail',
+        'revisions',
+    );
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'rewrite'              => array( 'slug' => 'slide' ),
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-images-alt2',
+    );
+    register_post_type( 'slide', $args );
+}
+add_action( 'init', 'cultura_slider_post_type' );
+function getSlider(){
+    $args = array(
+        'post_type' => 'slide',
+        'posts_per_page' => 3,
+        'orderby'=> 'rand'
+    );
+    $row = new WP_Query($args);
+    $data = $row->get_posts();
+    $post = null;
+    $counter = 0;
+    foreach ($data as $item){
+        $counter++;
+        $tmp['ID'] = $item->ID;
+        $tmp['slider_author'] = $item->post_author;
+        $tmp['slider_date'] = $item->post_date;
+        $tmp['slider_title'] = $item->post_title;
+        $tmp['slider_description'] = $item->post_content;
+        $tmp['slider_url'] = get_post_meta($item->ID,'slider_url', true);
+        $tmp['slider_btn'] = get_post_meta($item->ID,'slider_btn', true);
+        $tmp['slider_target'] = get_post_meta($item->ID,'slider_target', true);
+        $imageID = get_post_meta($item->ID,'image_movil', true);
+        $thumbID = get_post_thumbnail_id($item->ID);
+        $tmp['image_thumbnail'] = wp_get_attachment_image_src( $thumbID, 'thumbnail' );
+        $tmp['image_full'] = wp_get_attachment_image_src( $thumbID, 'full' );
+        $tmp['image_movil'] = wp_get_attachment_image_src( $imageID, 'full' );
+        if($counter==1){
+            $tmp['post_active'] = 'active';
+        }else{
+            $tmp['post_active'] = null;
+        }
+        $post[] = $tmp;
+    }
+    return  $post;
+}
 
 
 
