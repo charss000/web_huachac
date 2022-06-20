@@ -104,7 +104,7 @@ class WPBakeryShortCode_Vc_Basic_Grid extends WPBakeryShortCode_Vc_Pageable {
 	 */
 	public function __construct( $settings ) {
 		parent::__construct( $settings );
-		$this->attributes_defaults['btn_title'] = esc_html__( 'Load more', 'js_composer' );
+		$this->attributes_defaults['btn_title'] = esc_html__( 'Mostrar Más ', 'js_composer' );
 		$this->shortcodeScripts();
 	}
 
@@ -385,7 +385,7 @@ class WPBakeryShortCode_Vc_Basic_Grid extends WPBakeryShortCode_Vc_Pageable {
 		}
 		if ( 'load-more' === $this->atts['style'] ) {
 			$this->grid_settings = array_merge( $this->grid_settings, array(
-				// used in dispaly style load more button, lazy, pagination
+				// used in dispaly style Mostrar Más  button, lazy, pagination
 				'items_per_page' => $this->atts['items_per_page'],
 				'btn_data' => vc_map_integrate_parse_atts( $this->shortcode, 'vc_btn', $this->atts, 'btn_' ),
 			) );

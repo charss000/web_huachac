@@ -18,7 +18,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 		protected static $gridColsList;
 
 		protected static function initData() {
-			self::$btn3Params = vc_map_integrate_shortcode( 'vc_btn', 'btn_', esc_html__( 'Load More Button', 'js_composer' ), array(
+			self::$btn3Params = vc_map_integrate_shortcode( 'vc_btn', 'btn_', esc_html__( 'Mostrar Más  Button', 'js_composer' ), array(
 				'exclude' => array(
 					'link',
 					'css',
@@ -32,7 +32,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 			) );
 			foreach ( self::$btn3Params as $key => $value ) {
 				if ( 'btn_title' === $value['param_name'] ) {
-					self::$btn3Params[ $key ]['value'] = esc_html__( 'Load more', 'js_composer' );
+					self::$btn3Params[ $key ]['value'] = esc_html__( 'Mostrar Más ', 'js_composer' );
 				} elseif ( 'btn_color' === $value['param_name'] ) {
 					self::$btn3Params[ $key ]['std'] = 'blue';
 				} elseif ( 'btn_style' === $value['param_name'] ) {
@@ -206,7 +206,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'style',
 					'value' => array(
 						esc_html__( 'Show all', 'js_composer' ) => 'all',
-						esc_html__( 'Load more button', 'js_composer' ) => 'load-more',
+						esc_html__( 'Mostrar Más  button', 'js_composer' ) => 'load-more',
 						esc_html__( 'Lazy loading', 'js_composer' ) => 'lazy',
 						esc_html__( 'Pagination', 'js_composer' ) => 'pagination',
 					),
@@ -693,14 +693,14 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'group' => esc_html__( 'Design Options', 'js_composer' ),
 				),
 
-				// Load more btn
+				// Mostrar Más  btn
 				array(
 					'type' => 'hidden',
 					'heading' => esc_html__( 'Button style', 'js_composer' ),
 					'param_name' => 'button_style',
 					'value' => '',
 					'param_holder_class' => 'vc_colored-dropdown',
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -713,7 +713,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'button_color',
 					'value' => '',
 					'param_holder_class' => 'vc_colored-dropdown',
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -726,7 +726,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'button_size',
 					'value' => '',
 					'description' => esc_html__( 'Select button size.', 'js_composer' ),
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -765,7 +765,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'style',
 					'value' => array(
 						esc_html__( 'Show all', 'js_composer' ) => 'all',
-						esc_html__( 'Load more button', 'js_composer' ) => 'load-more',
+						esc_html__( 'Mostrar Más  button', 'js_composer' ) => 'load-more',
 						esc_html__( 'Lazy loading', 'js_composer' ) => 'lazy',
 						esc_html__( 'Pagination', 'js_composer' ) => 'pagination',
 					),
@@ -829,7 +829,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'button_style',
 					'value' => '',
 					'param_holder_class' => 'vc_colored-dropdown',
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -842,7 +842,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'button_color',
 					'value' => '',
 					'param_holder_class' => 'vc_colored-dropdown',
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -855,7 +855,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'button_size',
 					'value' => '',
 					'description' => esc_html__( 'Select button size.', 'js_composer' ),
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -1053,14 +1053,14 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'group' => esc_html__( 'Design Options', 'js_composer' ),
 				),
 			), self::$btn3Params, array(
-				// Load more btn bc
+				// Mostrar Más  btn bc
 				array(
 					'type' => 'hidden',
 					'heading' => esc_html__( 'Button style', 'js_composer' ),
 					'param_name' => 'button_style',
 					'value' => '',
 					'param_holder_class' => 'vc_colored-dropdown',
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -1073,7 +1073,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'button_color',
 					'value' => '',
 					'param_holder_class' => 'vc_colored-dropdown',
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),
@@ -1086,7 +1086,7 @@ if ( ! class_exists( 'VcGridsCommon' ) ) {
 					'param_name' => 'button_size',
 					'value' => '',
 					'description' => esc_html__( 'Select button size.', 'js_composer' ),
-					'group' => esc_html__( 'Load More Button', 'js_composer' ),
+					'group' => esc_html__( 'Mostrar Más  Button', 'js_composer' ),
 					'dependency' => array(
 						'element' => 'style',
 						'value' => array( 'load-more' ),

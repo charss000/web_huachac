@@ -4099,7 +4099,7 @@ msgstr "Auto roteer sliderafbeeldingen"
 #: config/./grids/class-vc-grids-common.php:1055
 #: config/./grids/class-vc-grids-common.php:1068
 #: config/./grids/class-vc-grids-common.php:1081
-msgid "Load More Button"
+msgid "Mostrar Más  Button"
 msgstr ""
 
 # @ js_composer
@@ -4107,7 +4107,7 @@ msgstr ""
 #: include/./classes/shortcodes/paginator/class-vc-pageable.php:55
 #: include/./classes/shortcodes/vc-basic-grid.php:92
 #, fuzzy
-msgid "Load more"
+msgid "Mostrar Más "
 msgstr "Meer lezen"
 
 # @ default
@@ -4177,7 +4177,7 @@ msgstr "Toon alles"
 #: config/./grids/class-vc-grids-common.php:203
 #: config/./grids/class-vc-grids-common.php:760
 #, fuzzy
-msgid "Load more button"
+msgid "Mostrar Más  button"
 msgstr "Lees meer link"
 
 # @ js_composer

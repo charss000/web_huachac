@@ -48,7 +48,7 @@ class WPBakeryShortCode_Vc_Pageable extends WPBakeryShortCode {
 	protected function contentLoadMore( $grid_style, $settings, $content ) {
 		if ( ! isset( $settings['btn_data'] ) && isset( $settings['button_style'] ) && isset( $settings['button_size'] ) && isset( $settings['button_color'] ) ) {
 			// BC: for those who overrided
-			$output = sprintf( '<div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true">%s</div><div class="vc_pageable-load-more-btn" data-vc-grid-load-more-btn="true">%s</div>', $content, do_shortcode( '[vc_button2 size="' . $settings['button_size'] . '" title="' . esc_attr__( 'Load more', 'js_composer' ) . '" style="' . $settings['button_style'] . '" color="' . $settings['button_color'] . '" el_class="vc_grid-btn-load_more"]' ) );
+			$output = sprintf( '<div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true">%s</div><div class="vc_pageable-load-more-btn" data-vc-grid-load-more-btn="true">%s</div>', $content, do_shortcode( '[vc_button2 size="' . $settings['button_size'] . '" title="' . esc_attr__( 'Mostrar Más ', 'js_composer' ) . '" style="' . $settings['button_style'] . '" color="' . $settings['button_color'] . '" el_class="vc_grid-btn-load_more"]' ) );
 
 			return $output;
 		} elseif ( isset( $settings['btn_data'] ) ) {

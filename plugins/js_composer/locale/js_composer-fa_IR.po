@@ -3898,13 +3898,13 @@ msgstr "چرخش اتوماتیک اسلایدها"
 #: config/./grids/class-vc-grids-common.php:1055
 #: config/./grids/class-vc-grids-common.php:1068
 #: config/./grids/class-vc-grids-common.php:1081
-msgid "Load More Button"
+msgid "Mostrar Más  Button"
 msgstr "دکمه بارگزاری موارد بیشتر"
 
 #: config/./grids/class-vc-grids-common.php:33
 #: include/./classes/shortcodes/paginator/class-vc-pageable.php:55
 #: include/./classes/shortcodes/vc-basic-grid.php:92
-msgid "Load more"
+msgid "Mostrar Más "
 msgstr "بارگزاری موارد بیشتر"
 
 #: config/./grids/class-vc-grids-common.php:97
@@ -3971,7 +3971,7 @@ msgstr "نمایش همه"
 
 #: config/./grids/class-vc-grids-common.php:203
 #: config/./grids/class-vc-grids-common.php:760
-msgid "Load more button"
+msgid "Mostrar Más  button"
 msgstr "دکمه بارگزاری موارد بیشتر"
 
 #: config/./grids/class-vc-grids-common.php:204

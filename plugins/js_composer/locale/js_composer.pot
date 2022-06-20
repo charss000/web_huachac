@@ -3679,13 +3679,13 @@ msgstr ""
 #: config/./grids/class-vc-grids-common.php:1061
 #: config/./grids/class-vc-grids-common.php:1074
 #: config/./grids/class-vc-grids-common.php:1087
-msgid "Load More Button"
+msgid "Mostrar Más  Button"
 msgstr ""
 
 #: config/./grids/class-vc-grids-common.php:34
 #: include/./classes/shortcodes/paginator/class-vc-pageable.php:51
 #: include/./classes/shortcodes/vc-basic-grid.php:107
-msgid "Load more"
+msgid "Mostrar Más "
 msgstr ""
 
 #: config/./grids/class-vc-grids-common.php:100
@@ -3747,7 +3747,7 @@ msgstr ""
 
 #: config/./grids/class-vc-grids-common.php:207
 #: config/./grids/class-vc-grids-common.php:766
-msgid "Load more button"
+msgid "Mostrar Más  button"
 msgstr ""
 
 #: config/./grids/class-vc-grids-common.php:208

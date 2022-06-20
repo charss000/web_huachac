@@ -3938,13 +3938,13 @@ msgstr "Rotació automàtica de les diapositives"
 #: config/./grids/class-vc-grids-common.php:1055
 #: config/./grids/class-vc-grids-common.php:1068
 #: config/./grids/class-vc-grids-common.php:1081
-msgid "Load More Button"
+msgid "Mostrar Más  Button"
 msgstr "Botó de carrega'n més"
 
 #: config/./grids/class-vc-grids-common.php:33
 #: include/./classes/shortcodes/paginator/class-vc-pageable.php:55
 #: include/./classes/shortcodes/vc-basic-grid.php:92
-msgid "Load more"
+msgid "Mostrar Más "
 msgstr "Carrega'n més"
 
 #: config/./grids/class-vc-grids-common.php:97
@@ -4011,7 +4011,7 @@ msgstr "Mostra tot"
 
 #: config/./grids/class-vc-grids-common.php:203
 #: config/./grids/class-vc-grids-common.php:760
-msgid "Load more button"
+msgid "Mostrar Más  button"
 msgstr "Botó de carrega'n més"
 
 #: config/./grids/class-vc-grids-common.php:204

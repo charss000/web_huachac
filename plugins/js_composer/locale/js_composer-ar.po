@@ -3867,13 +3867,13 @@ msgstr "تدوير الشرائح بشكل آلى"
 #: config/./grids/class-vc-grids-common.php:1055
 #: config/./grids/class-vc-grids-common.php:1068
 #: config/./grids/class-vc-grids-common.php:1081
-msgid "Load More Button"
+msgid "Mostrar Más  Button"
 msgstr "زر تحميل المزيد"
 
 #: config/./grids/class-vc-grids-common.php:33
 #: include/./classes/shortcodes/paginator/class-vc-pageable.php:55
 #: include/./classes/shortcodes/vc-basic-grid.php:92
-msgid "Load more"
+msgid "Mostrar Más "
 msgstr "المزيد"
 
 #: config/./grids/class-vc-grids-common.php:97
@@ -3940,7 +3940,7 @@ msgstr "عرض الكل"
 
 #: config/./grids/class-vc-grids-common.php:203
 #: config/./grids/class-vc-grids-common.php:760
-msgid "Load more button"
+msgid "Mostrar Más  button"
 msgstr "تحميل المزيد من الازرار"
 
 #: config/./grids/class-vc-grids-common.php:204

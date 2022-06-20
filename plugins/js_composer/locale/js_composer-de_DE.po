@@ -4067,14 +4067,14 @@ msgstr "Slides automatisch rotieren"
 #: config/./grids/class-vc-grids-common.php:1068
 #: config/./grids/class-vc-grids-common.php:1081
 #, fuzzy
-msgid "Load More Button"
+msgid "Mostrar Más  Button"
 msgstr "Weiterlesen"
 
 #: config/./grids/class-vc-grids-common.php:33
 #: include/./classes/shortcodes/paginator/class-vc-pageable.php:55
 #: include/./classes/shortcodes/vc-basic-grid.php:92
 #, fuzzy
-msgid "Load more"
+msgid "Mostrar Más "
 msgstr "Weiterlesen"
 
 #: config/./grids/class-vc-grids-common.php:97
@@ -4142,7 +4142,7 @@ msgstr "Zeige alle"
 #: config/./grids/class-vc-grids-common.php:203
 #: config/./grids/class-vc-grids-common.php:760
 #, fuzzy
-msgid "Load more button"
+msgid "Mostrar Más  button"
 msgstr "Weiterlesen"
 
 #: config/./grids/class-vc-grids-common.php:204

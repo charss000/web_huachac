@@ -371,7 +371,7 @@ class Vc_Grid_Item {
 	}
 
 	/**
-	 * Set that this is last items in the grid. Used for load more button and lazy loading.
+	 * Set that this is last items in the grid. Used for Mostrar Más  button and lazy loading.
 	 *
 	 * @param bool $is_end
 	 */

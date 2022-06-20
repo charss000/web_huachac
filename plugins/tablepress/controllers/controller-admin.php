@@ -349,7 +349,7 @@ class TablePress_Admin_Controller extends TablePress_Controller {
 			'message'      => ( ! empty( $_GET['message'] ) ) ? $_GET['message'] : false,
 		);
 
-		// Depending on the action, load more necessary data for the corresponding view.
+		// Depending on the action, Mostrar Más  necessary data for the corresponding view.
 		switch ( $action ) {
 			case 'list':
 				$data['table_id'] = ( ! empty( $_GET['table_id'] ) ) ? $_GET['table_id'] : false;
