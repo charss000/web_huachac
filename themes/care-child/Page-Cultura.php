@@ -7,14 +7,19 @@
 get_header( 'cultura' );
 $sliders = getSlider();
 ?>
-<div class="slider_carrucel with-dots">
+<div class="site-block-wrap" id="portada-section">
+<div  id='slider_carrucel_cultura' class='owl-carousel slider_cultura'>
 
 <?php foreach ($sliders as $item) { ?>
 	<div id="slider-<?php echo $item['ID']; ?>"
 		 class="site-blocks-cover slider overlay overlay-2"
 		 style="background-image: url(<?php echo $item['image_full'][0] ?>);"
 		 data-aos="fade">
+		 <div class="overlay3">
+		 <span class='overlay-left-bg'><span>
+		 </div>
 		<div class="container">
+		
 			<div class="row align-items-center justify-content-center">
 				<div class="col-md-12 mt-lg-5">
 				
@@ -32,7 +37,7 @@ $sliders = getSlider();
 		</div>
 	</div>
 <?php } ?>
-
+					</div>
 </div> 
  
 <div id="container" class="no-sidebar">

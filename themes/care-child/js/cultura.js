@@ -24,16 +24,23 @@ const cont=document.querySelector('.footer-cultura');
 
 }	
 }
-jQuery('.slider_carrucel').owlCarousel({
-	center: false,
-	items: 1,
-	loop: true,
-		stagePadding: 0,
-	margin: 0,
-		autoplay: true,
-		smartSpeed: 1000,
-	pauseOnHover: false,
-	nav: false,
-	dots: true,
-	navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
-  });
+jQuery(document).ready(function(){
+mostrarsliderCultura();
+})
+function mostrarsliderCultura(){
+	jQuery("#slider_carrucel_cultura").owlCarousel(
+		{
+			center: false,
+			items: 1,
+			loop: true,
+				stagePadding: 0,
+			margin: 0,
+				autoplay: true,
+				smartSpeed: 1000,
+			pauseOnHover: false,
+			nav: false,
+			dots: true,
+			navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+		}
+		);
+}
