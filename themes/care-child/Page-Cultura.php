@@ -7,11 +7,7 @@
 get_header( 'cultura' );
 $sliders = getSlider();
 ?>
-
- 
-<div id="container" class="no-sidebar">
-			<div id="content">
-			<div class="slider_carrucel with-dots">
+<div class="slider_carrucel with-dots">
 
 <?php foreach ($sliders as $item) { ?>
 	<div id="slider-<?php echo $item['ID']; ?>"
@@ -38,6 +34,10 @@ $sliders = getSlider();
 <?php } ?>
 
 </div> 
+ 
+<div id="container" class="no-sidebar">
+			<div id="content">
+			
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
