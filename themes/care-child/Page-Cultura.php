@@ -15,13 +15,20 @@ $sliders = getSlider();
 		 class="site-blocks-cover slider overlay overlay-2"
 		 style="background-image: url(<?php echo $item['image_full'][0] ?>);"
 		 data-aos="fade">
-		 <div class="overlay3">
+		 <span class="esquin_right"></span>
+		 <span class="esquin_top_left"></span>
+		 <div class="overlay-bg">
 		 <span class='overlay-left-bg'><span>
+         <span class='esquin_slider'></span>
+		 <span class="esquin_booton"></span>
 		 </div>
+		
 		<div class="container">
 		
 			<div class="row align-items-center justify-content-center">
+		
 				<div class="col-md-12 mt-lg-5">
+
 				
 					<h1 class="slider-title text-shadow"><?php echo $item['slider_title']; ?></h1>
 					<div class="slider-description mb-5 text-shadow"><?php echo $item['slider_description']; ?></div>
