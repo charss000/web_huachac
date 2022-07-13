@@ -14,5 +14,6 @@
 		
 <?php echo ot_get_option('code_before_body'); ?>
 <?php wp_footer(); ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

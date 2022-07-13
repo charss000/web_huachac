@@ -33,13 +33,13 @@ class mpw_widget extends WP_Widget {
 			echo $content = '<a href="https://api.whatsapp.com/send?phone='.'[+51]['.$url.']"'.' data-color="'.$color.'" data-text="'.$infoText.'"><i class="fa fa-whatsapp" target="_blank"></i></a>';
 			break;
 		case 'Youtube':
-			echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'"><i class="fa fa-youtube"></i></a>';
+			echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'"><i class="fa fa-youtube" ></i></a>';
 			break;
 		case 'Linkedin':
-			echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'"><i class="fa fa-linkedin"></i></a>';
+			echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'" ><i class="fa fa-linkedin"></i></a>';
 			break;
 		case 'Pinterest':
-			echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'"><i class="fa fa-pinterest-square"></i></a>';
+			echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'" ><i class="fa fa-pinterest-square"></i></a>';
 			break;
 		case 'Twitter':
 			echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'"> <i class="fa fa-twitter"></i></a>	';
@@ -51,7 +51,7 @@ class mpw_widget extends WP_Widget {
             echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'"> <i class="fa fa-dribbble"></i></a>';
             break;  
 		case 'Correo':
-            echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'"> <i class="fa fa-envelope"></i></a>';
+            echo $content = '<a href="https://'.$url.'" target="_blank" data-color="'.$color.'" data-text="'.$infoText.'" > <i class="fa fa-envelope"></i></a>';
             break;
         case 'Page':
             echo $content = '<a href="https://'.$url.'"  target="_blank" data-color="'.$color.'" data-text="'.$infoText.'"> <i class="fa fa-thumbs-up"></i></a>';
