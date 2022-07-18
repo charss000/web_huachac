@@ -20,7 +20,7 @@ numImg.forEach(item => {
 jQuery(document).ready(function(){		
   MostrarCarrucel();
 //templateGestionRiesgos()
-//templateComunicado()
+templateComunicado()
 //templateVideoModal();
 	
 });	
@@ -40,8 +40,9 @@ function templateGestionRiesgos(){
 	CargarComunicadosInfo(title,template)
 }
 function templateComunicado(){
-		const template =`<h3>Padron final de beneficiarios de donaciones de bienes Municipalidad Distrital de Huáchac </h3>
-<a href='https://munihuachac.gob.pe/wp-content/uploads/2022/05/SKMBT_36322051812030.pdf' target='blank' class="bnt-ventana" > Ver Lista</a> </br> <br>
+		const template =`<h3>ORDENANZA MUNICIPAL Nº005-2022-MDH/CM </h3>
+    <p>Que reglamenta la Propaganda Electoral, Publicidad estatal y Neutralidad en Periodo Electoral.</p>
+<a href='https://drive.google.com/file/d/10tlVxbaLompGvWY9UKJnNDCtLb8PB-Vi/view?usp=sharing' target='blank' class="bnt-ventana" > Ver Ordenanza</a> </br> <br>
 
 `
 	cargarventaInforme(template);
@@ -123,7 +124,7 @@ function MostrarVideoModal(title,template){
 }
 function CargarComunicadosInfo(title,template){
 	
-pdfjsLib.getDocument('https://munihuachac.gob.pe/wp-content/uploads/2022/04/PROGRAMA-GESTION-DE-RIESGOS-1-1.pdf').then((pdf) => {
+pdfjsLib.getDocument('https://drive.google.com/file/d/10tlVxbaLompGvWY9UKJnNDCtLb8PB-Vi/view?usp=sharing').then((pdf) => {
  myState.pdf = pdf;
 render();
     // more code here
